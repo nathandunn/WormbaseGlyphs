@@ -10,7 +10,7 @@ function (
 ) {
     return declare(JBrowsePlugin, {
         constructor: function (/* args*/) {
-            console.log('wormbase-glyphs plugin starting');
+            console.log('WormbaseGlyphs plugin starting');
          var browser = this.browser;
          if( browser.config.show_menu && browser.config.show_nav ) {
             JBrowse.afterMilestone('completely initialized', function() {

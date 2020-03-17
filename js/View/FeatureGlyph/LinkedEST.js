@@ -1,4 +1,4 @@
-define("wormbase-glyphs/View/FeatureGlyph/LinkedEST", [
+define("WormbaseGlyphs/View/FeatureGlyph/LinkedEST", [
            'dojo/_base/declare',
            'dojo/_base/lang',
            'dojo/_base/array',
@@ -57,7 +57,7 @@ _getFeatureRectangle: function( viewArgs, feature ) {
         f: feature,
         glyph: this
     };
-    
+
     var EST1 = '';
     var EST2 = false;
     if( subfeatures && subfeatures.length ) {
@@ -90,7 +90,7 @@ _getFeatureRectangle: function( viewArgs, feature ) {
                     EST2 = subfeatures[i];
                     start2 = EST2.get('start');
                 }
-                else 
+                else
                 {
                     EST2 = subfeatures[i];
                     start2 = EST2.get('start');
@@ -155,7 +155,7 @@ _getFeatureRectangle: function( viewArgs, feature ) {
 
     //console.log(fRect);
 
-    
+
 
     return fRect;
 },

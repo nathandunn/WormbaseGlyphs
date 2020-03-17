@@ -1,4 +1,4 @@
-define("wormbase-glyphs/View/FeatureGlyph/IntronGene", [
+define("WormbaseGlyphs/View/FeatureGlyph/IntronGene", [
            'dojo/_base/declare',
            'dojo/_base/lang',
            'dojo/_base/array',
@@ -54,7 +54,7 @@ _getFeatureRectangle: function( viewArgs, feature ) {
         fRect.r = -Infinity;
 
         for( var i = 0; i < subfeatures.length; i++ ) {
-            var subRect; 
+            var subRect;
 
             subRect = this._boxGlyph()._getFeatureRectangle( subArgs, subfeatures[i] );
 

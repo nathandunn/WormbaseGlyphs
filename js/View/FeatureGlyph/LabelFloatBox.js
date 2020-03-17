@@ -1,4 +1,4 @@
-define("wormbase-glyphs/View/FeatureGlyph/LabelFloatBox", [
+define("WormbaseGlyphs/View/FeatureGlyph/LabelFloatBox", [
            'dojo/_base/declare',
            'dojo/_base/array',
            'dojo/_base/lang',

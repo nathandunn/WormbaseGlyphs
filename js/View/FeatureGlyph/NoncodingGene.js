@@ -1,6 +1,6 @@
-define("wormbase-glyphs/View/FeatureGlyph/NoncodingGene", [
+define("WormbaseGlyphs/View/FeatureGlyph/NoncodingGene", [
            'dojo/_base/declare',
-           'wormbase-glyphs/View/FeatureGlyph/ExonTranscript',
+           'WormbaseGlyphs/View/FeatureGlyph/ExonTranscript',
            'JBrowse/View/FeatureGlyph/Gene'
        ],
        function(

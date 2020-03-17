@@ -1,10 +1,10 @@
-define("wormbase-glyphs/View/FeatureGlyph/WBGene", [
+define("WormbaseGlyphs/View/FeatureGlyph/WBGene", [
            'dojo/_base/declare',
            'dojo/_base/lang',
            'dojo/_base/array',
            'JBrowse/View/FeatureGlyph/Box',
            'JBrowse/View/FeatureGlyph/ProcessedTranscript',
-           'wormbase-glyphs/View/FeatureGlyph/ExonTranscript'
+           'WormbaseGlyphs/View/FeatureGlyph/ExonTranscript'
        ],
        function(
            declare,
@@ -70,12 +70,12 @@ _getFeatureRectangle: function( viewArgs, feature ) {
 
         var transcriptType; // will be an array even if most of the time there will be only one element
         var transcriptTypeStr = this.getConfForFeature( 'transcriptType', feature );
-        transcriptType = transcriptTypeStr.split(','); 
-        
+        transcriptType = transcriptTypeStr.split(',');
+
         for( var i = 0; i < subfeatures.length; i++ ) {
             var ptType = false;
             var exType = false;
-            var subRect; 
+            var subRect;
             if (subfeatures[i].get('type') == transcriptType[0]) {ptType = true;}
             for (var j = 1; j < transcriptType.length; j++) {
                 if (subfeatures[i].get('type') == transcriptType[j]) {exType = true;}
