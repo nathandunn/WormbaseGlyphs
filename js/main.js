@@ -27,7 +27,7 @@ function (
                     mod_str =  '<a style="margin: 2px" href="/tools/genome/jbrowse-simple/full.html?data=data%2Fold-modencode">Looking for older modENCODE data?</a></br>';
                 }
                 var parent = document.getElementById('dijit_layout_ContentPane_2'); //track selector pane
-                dojo.place(domConstruct.toDom(wb_ver + mod_str + br), parent, "first"); //add version and modencode message
+                // dojo.place(domConstruct.toDom(wb_ver + mod_str + br), parent, "first"); //add version and modencode message
 
                 //add logo to menubar
                 var bluebar = browser.menuBar;
